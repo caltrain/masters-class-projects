@@ -1,0 +1,88 @@
+#! /bin/csh -f
+#----------------------------------------------------------------------
+#
+# Script to submit a job (in the script loopydeloo) to the SLURM
+# batch manager. 
+#
+# You may want to change the shell to whatever you use, but bash is  
+# the usual default. Notice that for c-shell, the -f parameter means
+# "don't read in .cshrc", so change it if you use any aliases or
+# env settings in your resource or profile files.
+#
+# Use "man sbatch" to see other options that can be added. E.g., you
+# can have email sent on job start, job completion, etc. I send 
+# stdout to the file "slurmylog-*"; it should be an empty file unless
+# errors occur. You can also merge stdout and stderr. The --nodes 
+# value is specified by nmin:nmax, and putting nmin = nmax specifies
+# the job will run on exactly that number of nodes.
+#
+# You should have the following modules loaded. Do "module load xxxx' 
+# at the command line prompt for each one. If you already have a 
+# different version of a given module already, do "module rm xxxx" 
+# before doing the load.
+#
+#   mpi/openmpi-1.3.1-gcc
+#
+#----------------------------------------------------------------------
+/bin/rm -f slurmylog
+sbatch                     \
+    --output=slurmylog     \
+    --job-name=slot-it     \
+    --nodes=2-2          \
+    --distribution=block   \
+    --time=0:20:0          \
+    --cpus-per-task=1      \
+    --ntasks-per-node=4    \
+    --verbose              \
+loopydeloo 
+echo '--------------------------------------'
+echo -n 'Job  launched, at  '
+echo `date`
+echo 'Output from squeue:'
+squeue -a
+echo '--------------------------------------'
+
+#  --distribution=block \
+# Can also use :
+
+#--------
+# block 
+#--------
+# 
+# The block method of distribution will allocate processes in-order to the cpus on a node. If the
+# number of processes exceeds the number of cpus on all of the nodes in the allocation then all
+# nodes will be utilized. For example, consider an allocation of three nodes each with two cpus. A
+# four-process block distribution request will distribute those processes to the nodes with pro-
+# cesses one and two on the first node, process three on the second node, and process four on the
+# third node. Block distribution is the default behavior if the number of tasks exceeds the number
+# of nodes requested.
+# 
+#--------
+# cyclic
+#--------
+# 
+# The cyclic method distributes processes in a round-robin fashion across the allocated nodes. That
+# is, process one will be allocated to the first node, process two to the second, and so on. This
+# is the default behavior if the number of tasks is no larger than the number of nodes requested.
+# 
+#---------
+# plane 
+#---------
+# 
+# The tasks are distributed in blocks of a specified size. The options include a number represent-
+# ing the size of the task block. This is followed by an optional specification of the task dis-
+# tribution scheme within a block of tasks and between the blocks of tasks. For more details
+# (including examples and diagrams), please see
+# https://computing.llnl.gov/linux/slurm/mc_support.html and
+# https://computing.llnl.gov/linux/slurm/dist_plane.html.
+# 
+#-----------
+# arbitrary
+#-----------
+# 
+# The arbitrary method of distribution will allocate processes in-order as listed in file designat-
+# ed by the environment variable SLURM_HOSTFILE. If this variable is listed it will over ride any
+# other method specified. If not set the method will default to block. Inside the hostfile must
+# contain at minimum the number of hosts requested. If requesting tasks (-n) your tasks will be
+# laid out on the nodes in the order of the file.
+# 

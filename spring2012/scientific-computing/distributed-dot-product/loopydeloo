@@ -1,0 +1,58 @@
+#! /bin/csh -f
+#--------------------------------------------------------------------------------------------
+#
+# Script that is launched by an sbatch script. This has a clumsy way of prepending the SLURM
+# environment variables to the output file "results". Because results is to be read directly
+# into Matlab for data analysis, all of the lines this script adds have a % sign to make
+# them into (Matlab) comment lines. 
+#
+# The admittedly clumsy way this is done is by 
+#       1. create the file "stuff" with a 3-line header
+#       2. append environment values that have the string slurm (case insensitive)
+#       3. create the file percentages to have 2 more lines than stuff, each with
+#           only a percent sign in column 1.
+#       4. use pr to put the files together (-m option)
+#          [update, 10 Apr 2011: Changed pr to paste, and avoid the loooong lines]
+#       5. run the actual code
+#
+# Notice that this is a C-shell script. Nowadays bash seems to be the  default shell, at
+# least on Linux, so if you modify it you will likely want to convert it to your own shell
+# language.
+#
+#-----------------
+# Randall Bramley
+# Department of Computer Science
+# Indiana University, Bloomington
+#-----------------------------------
+# Started: who knows?
+# Last Modified: Mon 26 Mar 2012, 07:03 AM 
+#--------------------------------------------------------------------------------------------
+
+#---------------------------------------------------------
+# Remove earlier temporary files if they are still around
+#---------------------------------------------------------
+/bin/rm -f stuff percentages 
+
+echo '======================================' >>! stuff
+echo ' SLURM environment settings are: ' >>! stuff
+echo '======================================' >>! stuff
+env  | grep -i slurm >>! stuff
+
+#-----------------------------------------------------------------------------------
+# If "wc -l stuff" is used, the return value will have the file name as well, e.g.,
+#       87 stuff
+# Using the stdin form eliminates that, so this is *not* a senseless abuse of cat
+# as in   http://uselessuseofcat.com/
+#-----------------------------------------------------------------------------------
+
+set nlines = `cat stuff | wc -l `
+set n = 1
+while ( $n <= ($nlines + 2) )
+    echo '%' >>! percentages
+    @ n = ($n + 1)
+end
+paste percentages stuff >>! slurmlog
+/bin/rm -f stuff percentages 
+
+mpicc testdot.c -o testdot
+mpirun ./go 

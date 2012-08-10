@@ -1,0 +1,35 @@
+speedup
+speedup same for 8 and 16.
+one process great speed up curve
+
+
+Observations:
+________________
+Interprocess communication
+________________
+The ratio of computation to the interprocess communication is analyzed as follows:
+For smaller vector sizes, the speed up curve is decreasing(negative speedup). 
+This is clearly evident in the given 'sizes' file input 1000   8000  500  1000000000
+This is happening because, the interprocess communication is much higher so that
+ it makes us loose the time we gained in parallelizing the computation
+ 
+1) This observation was done on smaller vector sizes ranging from 1000 to 8000:
+Starting from one process, as we keep increasing the 
+number of processes the speedup is going down gradually until we hit the eight process mark.  
+After this, the speed up is not changing(linear). 
+
+
+Higher data sizes:
+For higher data sizes frame(80000000) the speed up is increasing starting from the smaller process numbers
+The speed up is keep on increasing as we increase the number of processes but this increment is 
+stopped and there is a straightness when we hit the topmost vector length.
+This can be a normal observation because, it is very logical for calculation
+ time to decrease when the number of processes calculating is high.
+In other words, as we increase the number of process
+
+
+
+
+if the processes are in different nodes, it is possible to get a  higher running time because communication between processes in different node is complicated than processes in same node. The results file contains this output for 2 processes to support this concept, but the difference between the total time incurred is near to negligible. In order to make this concept clear, if we run multiple times for higher data sizes, there is a potential for getting higher running time. 
+
+

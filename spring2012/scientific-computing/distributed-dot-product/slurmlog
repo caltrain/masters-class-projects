@@ -1,0 +1,421 @@
+%	======================================
+%	 SLURM environment settings are: 
+%	======================================
+%	SLURM_NTASKS_PER_NODE=4
+%	SLURM_JOB_NAME=slot-it
+%	SLURM_DISTRIBUTION=block
+%	SLURM_PRIO_PROCESS=0
+%	SLURM_SUBMIT_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURM_JOB_ID=14803
+%	SLURM_JOB_NUM_NODES=1
+%	SLURM_JOB_NODELIST=odin005
+%	SLURM_JOB_CPUS_PER_NODE=4
+%	SLURM_JOBID=14803
+%	SLURM_NNODES=1
+%	SLURM_NODELIST=odin005
+%	SLURM_NTASKS=4
+%	SLURM_NPROCS=4
+%	SLURM_TASKS_PER_NODE=4
+%	SLURM_TOPOLOGY_ADDR=odin005
+%	SLURM_TOPOLOGY_ADDR_PATTERN=node
+%	SLURM_TASK_PID=17400
+%	SLURM_CPUS_ON_NODE=4
+%	SLURM_NODEID=0
+%	SLURM_PROCID=0
+%	SLURM_LOCALID=0
+%	SLURM_GTIDS=0
+%	SLURM_CHECKPOINT_IMAGE_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURMD_NODENAME=odin005
+%	
+%	
+%	======================================
+%	 SLURM environment settings are: 
+%	======================================
+%	SLURM_NTASKS_PER_NODE=2
+%	SLURM_JOB_NAME=slot-it
+%	SLURM_DISTRIBUTION=block
+%	SLURM_PRIO_PROCESS=0
+%	SLURM_SUBMIT_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURM_JOB_ID=14819
+%	SLURM_JOB_NUM_NODES=1
+%	SLURM_JOB_NODELIST=odin043
+%	SLURM_JOB_CPUS_PER_NODE=4
+%	SLURM_JOBID=14819
+%	SLURM_NNODES=1
+%	SLURM_NODELIST=odin043
+%	SLURM_CPUS_PER_TASK=2
+%	SLURM_NTASKS=2
+%	SLURM_NPROCS=2
+%	SLURM_TASKS_PER_NODE=2
+%	SLURM_TOPOLOGY_ADDR=odin043
+%	SLURM_TOPOLOGY_ADDR_PATTERN=node
+%	SLURM_TASK_PID=32035
+%	SLURM_CPUS_ON_NODE=4
+%	SLURM_NODEID=0
+%	SLURM_PROCID=0
+%	SLURM_LOCALID=0
+%	SLURM_GTIDS=0
+%	SLURM_CHECKPOINT_IMAGE_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURMD_NODENAME=odin043
+%	
+%	
+%	======================================
+%	 SLURM environment settings are: 
+%	======================================
+%	SLURM_NTASKS_PER_NODE=2
+%	SLURM_JOB_NAME=slot-it
+%	SLURM_DISTRIBUTION=block
+%	SLURM_PRIO_PROCESS=0
+%	SLURM_SUBMIT_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURM_JOB_ID=14831
+%	SLURM_JOB_NUM_NODES=2
+%	SLURM_JOB_NODELIST=odin[014-015]
+%	SLURM_JOB_CPUS_PER_NODE=4(x2)
+%	SLURM_JOBID=14831
+%	SLURM_NNODES=2
+%	SLURM_NODELIST=odin[014-015]
+%	SLURM_NTASKS=4
+%	SLURM_NPROCS=4
+%	SLURM_TASKS_PER_NODE=2(x2)
+%	SLURM_TOPOLOGY_ADDR=odin014
+%	SLURM_TOPOLOGY_ADDR_PATTERN=node
+%	SLURM_TASK_PID=15634
+%	SLURM_CPUS_ON_NODE=4
+%	SLURM_NODEID=0
+%	SLURM_PROCID=0
+%	SLURM_LOCALID=0
+%	SLURM_GTIDS=0
+%	SLURM_CHECKPOINT_IMAGE_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURMD_NODENAME=odin014
+%	
+%	
+%	======================================
+%	 SLURM environment settings are: 
+%	======================================
+%	SLURM_NTASKS_PER_NODE=2
+%	SLURM_JOB_NAME=slot-it
+%	SLURM_DISTRIBUTION=block
+%	SLURM_PRIO_PROCESS=0
+%	SLURM_SUBMIT_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURM_JOB_ID=14859
+%	SLURM_JOB_NUM_NODES=2
+%	SLURM_JOB_NODELIST=odin[083-084]
+%	SLURM_JOB_CPUS_PER_NODE=4(x2)
+%	SLURM_JOBID=14859
+%	SLURM_NNODES=2
+%	SLURM_NODELIST=odin[083-084]
+%	SLURM_NTASKS=4
+%	SLURM_NPROCS=4
+%	SLURM_TASKS_PER_NODE=2(x2)
+%	SLURM_TOPOLOGY_ADDR=odin083
+%	SLURM_TOPOLOGY_ADDR_PATTERN=node
+%	SLURM_TASK_PID=30731
+%	SLURM_CPUS_ON_NODE=4
+%	SLURM_NODEID=0
+%	SLURM_PROCID=0
+%	SLURM_LOCALID=0
+%	SLURM_GTIDS=0
+%	SLURM_CHECKPOINT_IMAGE_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURMD_NODENAME=odin083
+%	
+%	
+%	======================================
+%	 SLURM environment settings are: 
+%	======================================
+%	SLURM_NTASKS_PER_NODE=2
+%	SLURM_JOB_NAME=slot-it
+%	SLURM_DISTRIBUTION=block
+%	SLURM_PRIO_PROCESS=0
+%	SLURM_SUBMIT_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURM_JOB_ID=14861
+%	SLURM_JOB_NUM_NODES=2
+%	SLURM_JOB_NODELIST=odin[007-008]
+%	SLURM_JOB_CPUS_PER_NODE=4(x2)
+%	SLURM_JOBID=14861
+%	SLURM_NNODES=2
+%	SLURM_NODELIST=odin[007-008]
+%	SLURM_NTASKS=4
+%	SLURM_NPROCS=4
+%	SLURM_TASKS_PER_NODE=2(x2)
+%	SLURM_TOPOLOGY_ADDR=odin007
+%	SLURM_TOPOLOGY_ADDR_PATTERN=node
+%	SLURM_TASK_PID=23641
+%	SLURM_CPUS_ON_NODE=4
+%	SLURM_NODEID=0
+%	SLURM_PROCID=0
+%	SLURM_LOCALID=0
+%	SLURM_GTIDS=0
+%	SLURM_CHECKPOINT_IMAGE_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURMD_NODENAME=odin007
+%	
+%	
+%	======================================
+%	 SLURM environment settings are: 
+%	======================================
+%	SLURM_NTASKS_PER_NODE=4
+%	SLURM_JOB_NAME=slot-it
+%	SLURM_DISTRIBUTION=block
+%	SLURM_PRIO_PROCESS=0
+%	SLURM_SUBMIT_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURM_JOB_ID=14863
+%	SLURM_JOB_NUM_NODES=1
+%	SLURM_JOB_NODELIST=odin002
+%	SLURM_JOB_CPUS_PER_NODE=4
+%	SLURM_JOBID=14863
+%	SLURM_NNODES=1
+%	SLURM_NODELIST=odin002
+%	SLURM_NTASKS=4
+%	SLURM_NPROCS=4
+%	SLURM_TASKS_PER_NODE=4
+%	SLURM_TOPOLOGY_ADDR=odin002
+%	SLURM_TOPOLOGY_ADDR_PATTERN=node
+%	SLURM_TASK_PID=16486
+%	SLURM_CPUS_ON_NODE=4
+%	SLURM_NODEID=0
+%	SLURM_PROCID=0
+%	SLURM_LOCALID=0
+%	SLURM_GTIDS=0
+%	SLURM_CHECKPOINT_IMAGE_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURMD_NODENAME=odin002
+%	
+%	
+%	======================================
+%	 SLURM environment settings are: 
+%	======================================
+%	SLURM_NTASKS_PER_NODE=1
+%	SLURM_JOB_NAME=slot-it
+%	SLURM_DISTRIBUTION=block
+%	SLURM_PRIO_PROCESS=0
+%	SLURM_SUBMIT_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURM_JOB_ID=14873
+%	SLURM_JOB_NUM_NODES=2
+%	SLURM_JOB_NODELIST=odin[013-014]
+%	SLURM_JOB_CPUS_PER_NODE=4(x2)
+%	SLURM_JOBID=14873
+%	SLURM_NNODES=2
+%	SLURM_NODELIST=odin[013-014]
+%	SLURM_NTASKS=2
+%	SLURM_NPROCS=2
+%	SLURM_TASKS_PER_NODE=1(x2)
+%	SLURM_TOPOLOGY_ADDR=odin013
+%	SLURM_TOPOLOGY_ADDR_PATTERN=node
+%	SLURM_TASK_PID=22413
+%	SLURM_CPUS_ON_NODE=4
+%	SLURM_NODEID=0
+%	SLURM_PROCID=0
+%	SLURM_LOCALID=0
+%	SLURM_GTIDS=0
+%	SLURM_CHECKPOINT_IMAGE_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURMD_NODENAME=odin013
+%	
+%	
+%	======================================
+%	 SLURM environment settings are: 
+%	======================================
+%	SLURM_NTASKS_PER_NODE=2
+%	SLURM_JOB_NAME=slot-it
+%	SLURM_DISTRIBUTION=block
+%	SLURM_PRIO_PROCESS=0
+%	SLURM_SUBMIT_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURM_JOB_ID=14903
+%	SLURM_JOB_NUM_NODES=1
+%	SLURM_JOB_NODELIST=odin007
+%	SLURM_JOB_CPUS_PER_NODE=4
+%	SLURM_JOBID=14903
+%	SLURM_NNODES=1
+%	SLURM_NODELIST=odin007
+%	SLURM_NTASKS=2
+%	SLURM_NPROCS=2
+%	SLURM_TASKS_PER_NODE=2
+%	SLURM_TOPOLOGY_ADDR=odin007
+%	SLURM_TOPOLOGY_ADDR_PATTERN=node
+%	SLURM_TASK_PID=24084
+%	SLURM_CPUS_ON_NODE=4
+%	SLURM_NODEID=0
+%	SLURM_PROCID=0
+%	SLURM_LOCALID=0
+%	SLURM_GTIDS=0
+%	SLURM_CHECKPOINT_IMAGE_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURMD_NODENAME=odin007
+%	
+%	
+%	======================================
+%	 SLURM environment settings are: 
+%	======================================
+%	SLURM_NTASKS_PER_NODE=2
+%	SLURM_JOB_NAME=slot-it
+%	SLURM_DISTRIBUTION=block
+%	SLURM_PRIO_PROCESS=0
+%	SLURM_SUBMIT_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURM_JOB_ID=14936
+%	SLURM_JOB_NUM_NODES=1
+%	SLURM_JOB_NODELIST=odin002
+%	SLURM_JOB_CPUS_PER_NODE=4
+%	SLURM_JOBID=14936
+%	SLURM_NNODES=1
+%	SLURM_NODELIST=odin002
+%	SLURM_NTASKS=2
+%	SLURM_NPROCS=2
+%	SLURM_TASKS_PER_NODE=2
+%	SLURM_TOPOLOGY_ADDR=odin002
+%	SLURM_TOPOLOGY_ADDR_PATTERN=node
+%	SLURM_TASK_PID=17083
+%	SLURM_CPUS_ON_NODE=4
+%	SLURM_NODEID=0
+%	SLURM_PROCID=0
+%	SLURM_LOCALID=0
+%	SLURM_GTIDS=0
+%	SLURM_CHECKPOINT_IMAGE_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURMD_NODENAME=odin002
+%	
+%	
+%	======================================
+%	 SLURM environment settings are: 
+%	======================================
+%	SLURM_NTASKS_PER_NODE=2
+%	SLURM_JOB_NAME=slot-it
+%	SLURM_DISTRIBUTION=block
+%	SLURM_PRIO_PROCESS=0
+%	SLURM_SUBMIT_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURM_JOB_ID=14979
+%	SLURM_JOB_NUM_NODES=1
+%	SLURM_JOB_NODELIST=odin060
+%	SLURM_JOB_CPUS_PER_NODE=4
+%	SLURM_JOBID=14979
+%	SLURM_NNODES=1
+%	SLURM_NODELIST=odin060
+%	SLURM_NTASKS=2
+%	SLURM_NPROCS=2
+%	SLURM_TASKS_PER_NODE=2
+%	SLURM_TOPOLOGY_ADDR=odin060
+%	SLURM_TOPOLOGY_ADDR_PATTERN=node
+%	SLURM_TASK_PID=11072
+%	SLURM_CPUS_ON_NODE=4
+%	SLURM_NODEID=0
+%	SLURM_PROCID=0
+%	SLURM_LOCALID=0
+%	SLURM_GTIDS=0
+%	SLURM_CHECKPOINT_IMAGE_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURMD_NODENAME=odin060
+%	
+%	
+%	======================================
+%	 SLURM environment settings are: 
+%	======================================
+%	SLURM_NTASKS_PER_NODE=1
+%	SLURM_JOB_NAME=slot-it
+%	SLURM_DISTRIBUTION=block
+%	SLURM_PRIO_PROCESS=0
+%	SLURM_SUBMIT_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURM_JOB_ID=15049
+%	SLURM_JOB_NUM_NODES=2
+%	SLURM_JOB_NODELIST=odin[059-060]
+%	SLURM_JOB_CPUS_PER_NODE=4(x2)
+%	SLURM_JOBID=15049
+%	SLURM_NNODES=2
+%	SLURM_NODELIST=odin[059-060]
+%	SLURM_NTASKS=2
+%	SLURM_NPROCS=2
+%	SLURM_TASKS_PER_NODE=1(x2)
+%	SLURM_TOPOLOGY_ADDR=odin059
+%	SLURM_TOPOLOGY_ADDR_PATTERN=node
+%	SLURM_TASK_PID=11557
+%	SLURM_CPUS_ON_NODE=4
+%	SLURM_NODEID=0
+%	SLURM_PROCID=0
+%	SLURM_LOCALID=0
+%	SLURM_GTIDS=0
+%	SLURM_CHECKPOINT_IMAGE_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURMD_NODENAME=odin059
+%	
+%	
+%	======================================
+%	 SLURM environment settings are: 
+%	======================================
+%	SLURM_NTASKS_PER_NODE=2
+%	SLURM_JOB_NAME=slot-it
+%	SLURM_DISTRIBUTION=block
+%	SLURM_PRIO_PROCESS=0
+%	SLURM_SUBMIT_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURM_JOB_ID=15121
+%	SLURM_JOB_NUM_NODES=1
+%	SLURM_JOB_NODELIST=odin024
+%	SLURM_JOB_CPUS_PER_NODE=4
+%	SLURM_JOBID=15121
+%	SLURM_NNODES=1
+%	SLURM_NODELIST=odin024
+%	SLURM_NTASKS=2
+%	SLURM_NPROCS=2
+%	SLURM_TASKS_PER_NODE=2
+%	SLURM_TOPOLOGY_ADDR=odin024
+%	SLURM_TOPOLOGY_ADDR_PATTERN=node
+%	SLURM_TASK_PID=8520
+%	SLURM_CPUS_ON_NODE=4
+%	SLURM_NODEID=0
+%	SLURM_PROCID=0
+%	SLURM_LOCALID=0
+%	SLURM_GTIDS=0
+%	SLURM_CHECKPOINT_IMAGE_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURMD_NODENAME=odin024
+%	
+%	
+%	======================================
+%	 SLURM environment settings are: 
+%	======================================
+%	SLURM_NTASKS_PER_NODE=4
+%	SLURM_JOB_NAME=slot-it
+%	SLURM_DISTRIBUTION=block
+%	SLURM_PRIO_PROCESS=0
+%	SLURM_SUBMIT_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURM_JOB_ID=15202
+%	SLURM_JOB_NUM_NODES=4
+%	SLURM_JOB_NODELIST=odin[052-055]
+%	SLURM_JOB_CPUS_PER_NODE=4(x4)
+%	SLURM_JOBID=15202
+%	SLURM_NNODES=4
+%	SLURM_NODELIST=odin[052-055]
+%	SLURM_NTASKS=16
+%	SLURM_NPROCS=16
+%	SLURM_TASKS_PER_NODE=4(x4)
+%	SLURM_TOPOLOGY_ADDR=odin052
+%	SLURM_TOPOLOGY_ADDR_PATTERN=node
+%	SLURM_TASK_PID=18262
+%	SLURM_CPUS_ON_NODE=4
+%	SLURM_NODEID=0
+%	SLURM_PROCID=0
+%	SLURM_LOCALID=0
+%	SLURM_GTIDS=0
+%	SLURM_CHECKPOINT_IMAGE_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURMD_NODENAME=odin052
+%	
+%	
+%	======================================
+%	 SLURM environment settings are: 
+%	======================================
+%	SLURM_NTASKS_PER_NODE=4
+%	SLURM_JOB_NAME=slot-it
+%	SLURM_DISTRIBUTION=block
+%	SLURM_PRIO_PROCESS=0
+%	SLURM_SUBMIT_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURM_JOB_ID=15222
+%	SLURM_JOB_NUM_NODES=2
+%	SLURM_JOB_NODELIST=odin[052-053]
+%	SLURM_JOB_CPUS_PER_NODE=4(x2)
+%	SLURM_JOBID=15222
+%	SLURM_NNODES=2
+%	SLURM_NODELIST=odin[052-053]
+%	SLURM_NTASKS=8
+%	SLURM_NPROCS=8
+%	SLURM_TASKS_PER_NODE=4(x2)
+%	SLURM_TOPOLOGY_ADDR=odin052
+%	SLURM_TOPOLOGY_ADDR_PATTERN=node
+%	SLURM_TASK_PID=18444
+%	SLURM_CPUS_ON_NODE=4
+%	SLURM_NODEID=0
+%	SLURM_PROCID=0
+%	SLURM_LOCALID=0
+%	SLURM_GTIDS=0
+%	SLURM_CHECKPOINT_IMAGE_DIR=/nfs/rinfs/san/homedirs/magevadi/barrieredit
+%	SLURMD_NODENAME=odin052
+%	
+%	
