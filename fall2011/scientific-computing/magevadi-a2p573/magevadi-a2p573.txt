@@ -1,0 +1,138 @@
+
+________________________________________________________________________________________________
+               Assignment 2 - P573
+________________________________________________________________________________________________
+
+1.Number of Floating point operations required for the Dumb way.
+
+Part 1.
+Considering the m*m array,
+   It has m diagonal elements
+   Three floating point operations on m element -> 3m
+   It has m^2 - m  non diagonal elements
+   2 floating point operations on m^2-m element -> 2m^2 - 2m
+
+   Therefore, 2m^2 - 2m + 3m = 2m^2 + m
+
+Part 2.
+Considering a m*n matrix multiplied into n*p matrix,
+   number of floating point operations for each element of the resultant matrix is  n + (n - 1) 
+   number of element in the resultant matrix is m*p	
+   Therefore, m*p(2n - 1)
+
+   Now for a m*m matrix multiplied into m*n matrix,
+   flops ->  m*n(2m - 1)
+
+Adding flops in part 1 & 2,
+
+   2m^2 + m + 2m^2*n - m*n
+________________________________________________________________________________________________________
+
+2.Number of Floating point operations required for the Smart way.
+
+Part 1.
+Considering v^T to be 1*m  and A to be m*n
+   Therefore using m*p(2n - 1) for the above case, we get => n(2m - 1) = 2m*n - n
+ 
+Part 2.
+Considering multiplication of v which is m*1 and w which is 1*n
+   Therefore using m*p(2n - 1) for the above case, we get => m*n
+
+Considering multiplication of v*m and scalar would be => m*n
+Considering subraction of m*n matrix would be => m*n
+ 
+   Therefore for part 2, over all we have 3m*n
+
+Adding flops in part 1 & 2,
+   5m*n - n
+________________________________________________________________________________________________________
+
+3.The ratio of flops by smart to dumb way keeps on decreasing because flops required for smart way
+  would be increasing linearly but for dumb way it increases quadratically
+________________________________________________________________________________________________________
+
+4.
+BLAS2 is used for vector-matrix multiplication
+BLAS1 is used for vector-vector multiplication
+
+Part 1.
+
+#include <stdio.h>
+#include <gsl/gsl_blas.h>
+
+int m,n,i;
+int  main (void)
+{
+double w[1][n];
+double A[m][n];
+double vT[1][m];
+gsl_matrix_view A = gsl_matrix_view_array(a, 1, m);
+gsl_matrix_view B = gsl_matrix_view_array(b, m, n);
+gsl_matrix_view C = gsl_matrix_view_array(c, 1, n);
+
+gsl_blas_dgemm (CblasNoTrans, CblasNoTrans,
+                       1.0, &A.matrix, &B.matrix,
+                       0.0, &C.matrix);
+   for(int i = 0; i<n ; i++)
+    {
+	printf ("[ %g\n ]", c[1][i]); 
+    }   
+   return 0;  
+}
+
+Part2,
+
+#include <stdio.h>
+#include <gsl/gsl_blas.h>
+
+int m,n,i,j;
+int  main (void)
+{
+   double a[m][1];
+   double b[1][n];
+   double w[m][n];
+   double X[m][n];
+   double A[m][n];
+     
+   gsl_matrix_view A = gsl_matrix_view_array(a, m, 1);
+   gsl_matrix_view B = gsl_matrix_view_array(b, 1, n);
+   gsl_matrix_view C = gsl_matrix_view_array(c, m, n);
+
+   gsl_blas_dgemm (CblasNoTrans, CblasNoTrans,
+                       1.0, &A.matrix, &B.matrix,
+                       0.0, &C.matrix);
+      for (i=0;i<m; ++i )
+        for ( j=0; j<n; ++j){
+             X[i][j]=a*w[i][j]; 
+	}
+      for (i=0;i<m; ++i )
+        for ( j=0; j<n; ++j){
+            A[i][j] -= X[i][j];
+	}
+      for(i=0; i<m ; i++)
+	{
+      	   for(j = 0; j<n; j++)
+          {
+            printf ("[ %g\n ]", A[m][n]);
+          }   
+  	printf("\n");
+	}
+   return 0;  
+}
+________________________________________________________________________________________________________
+5.
+Memory references required for loading Matrix A into memory =>	m*n
+Memory references required for loading Vector v into memory => 	m
+Memory references required for loading Scalar into memory => 	1
+Memory references required for storing result back into Matrix A  => m*n
+
+Total Memory references required would be => 2m*n + m + 1
+________________________________________________________________________________________________________
+
+6.
+Dumb way for large m and n,
+Performance will reduce drastically because the number of flops increase quadratically.
+
+Smart way for large m and n,
+Performance will not change much because the number of flop increase only linearly.
+________________________________________________________________________________________________________

@@ -1,0 +1,43 @@
+p573@cs
+
+write(unit - output , fat = 888) 25, (time2 - time1)/(actual_repetititions*1.0d-9)
+
+es27.17 
+for any floating point number you should have 17 significant digits
+
+swith case for elapsed time
+	have different versions for calculating time
+	like:
+	cpu_time()
+	date_and_time()
+	system_clock()
+	system_clock()
+
+lonely.c
+set only the x1 to 3.2
+let others be just a double
+do comments like a box
+
+Topic: Performance modeling and vector computers
+basic single processor architecture ideas
+using cache 
+
+Linear algebra kernels
+In modern applications all are sparse matrix operations
+
+Chache
+caches are 10x faster
+2gz - 2billion clock ticks per sec. do 2billion operations per sec
+
+Terminology:
+clock cycle: basic unit of time for computer,
+cache hit: the datum in the cache
+cache miss: the datum is not in the cache
+hits take 1-2 cycles; misses take 10-100cycles
+cache line: when a word is referenced, an entire line of words is bought into the cache. Typically 32 - 128 bytes at a time.
+
+relative cost of cache miss:
+Cache modelling
+cace hit ratio = (#hits) / (#refernces)
+
+

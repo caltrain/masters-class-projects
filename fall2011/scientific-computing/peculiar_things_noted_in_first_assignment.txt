@@ -1,0 +1,1 @@
+peculiar things noted: in a sequence of similar printf statements the first printf statement takes longer time than all the following printf calls.
